@@ -144,7 +144,7 @@ jobs:
       use_kpm: ${{ inputs.use_kpm }}
 
   check-build-status:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     needs:
       - get_manager
       - build-kernel-a12-5-10
@@ -227,7 +227,7 @@ jobs:
           fi
 
   trigger-release:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     permissions:
       contents: write
     needs:

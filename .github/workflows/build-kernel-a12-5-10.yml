@@ -120,7 +120,7 @@ jobs:
   #     version: ${{ inputs.version }}
 
   # trigger-release:
-  #   runs-on: ubuntu-latest
+  #   runs-on: self-hosted
   #   needs:
   #       - build-kernel-a12-5-10
   #       - build-kernel-a13-5-10
